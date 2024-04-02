@@ -12,7 +12,7 @@ void setup(void) {
 
   Serial.println("Adafruit LSM6DSOX & MPL test!");
 
-  TwoWire *wire = new TwoWire(PB11, PB10);
+  TwoWire *wire = new TwoWire(PB_11, PB_10);
 
   if (!baro.begin(wire)) {
     Serial.println("Could not find sensor. Check wiring.");
